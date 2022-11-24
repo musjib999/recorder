@@ -46,6 +46,9 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
   record: ^4.4.3
+  just_audio: ^0.9.30
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
