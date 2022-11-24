@@ -25,7 +25,6 @@ class RecordService {
     if (await record.isRecording()) {
       path = await record.stop();
     }
-    print(path);
     return path;
   }
 }

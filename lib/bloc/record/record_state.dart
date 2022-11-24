@@ -1,6 +1,5 @@
 part of 'record_bloc.dart';
 
-
 class RecordState extends Equatable {
   final RecorderStatus status;
   final String? path;

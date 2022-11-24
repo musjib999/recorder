@@ -1,2 +1,2 @@
-export 'record.dart';
-export 'player.dart';
+export 'screens/screens.dart';
+export 'widgets/widgets.dart';
