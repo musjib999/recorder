@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:recorder/bloc/bluetooth/bluetooth_bloc.dart';
 import 'package:recorder/index.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../bloc/record/record_bloc.dart';
 
 class InitialRecordingButtons extends StatelessWidget {
@@ -23,6 +23,14 @@ class InitialRecordingButtons extends StatelessWidget {
             icon: Icons.mic,
             onPressed: () async {
               context.read<RecordBloc>().add(const StartRecord());
+            },
+          ),
+          RoundedButton(
+            color: Colors.blue,
+            icon: Icons.bluetooth,
+            onPressed: () async {
+              context.read<BluetoothBloc>().add(GetBluetoothDevices());
+              Navigator.of(context).push(Bluetooth.route());
             },
           ),
         ],

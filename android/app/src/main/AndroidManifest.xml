@@ -3,7 +3,10 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- Optional, you'll have to check this permission by yourself. -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-   <application
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application
         android:label="recorder"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">

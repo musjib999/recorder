@@ -6,4 +6,8 @@ class SoundService{
       await player.setFilePath(sound);
       await player.play();
   }
+
+  Future<void> pauseSound() async {
+    await player.pause();
+  }
 }
